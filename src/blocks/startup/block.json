@@ -1,0 +1,55 @@
+{
+	"apiVersion": 2,
+	"name": "gutenberg-block-development/startup",
+	"version": "1.0.0",
+	"title": "StartUP Block",
+	"category": "gutenberg-block-development",
+	"icon": "heart",
+	"description": "Startup block for turorial purpose",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"id": {
+			"type": "string"
+		},
+		"text": {
+			"type": "string",
+			"default": "Hello World"
+		},
+		"desc": {
+			"type": "string"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "none"
+		},
+		"heading": {
+			"type": "string",
+			"default": "h2"
+		},
+		"color": {
+			"type": "string",
+			"default": "#f00"
+		},
+		"bgColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"right": 0,
+				"bottom": 0,
+				"left": 0
+			}
+
+		}
+	},
+	"textdomain": "gutenberg-block-development",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
